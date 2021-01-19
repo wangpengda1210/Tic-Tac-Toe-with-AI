@@ -1,0 +1,16 @@
+<h2>Allocated memory</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Assume that in addition to the scaling factor, there is a factor responsible for deallocating unnecessary memory after removing elements from the list. You will be given two factors: one for increasing and one for reducing the allocated memory. Following that will be queries for abstract addition and removal of clusters of elements.</p> 
+  <p>Your task is to return the allocated memory for each 'count' query at that moment. Multiplication on a fraction is rounded up, division by a fraction is rounded down. The initially allocated memory is 2.</p> 
+  <p><strong>Input:</strong> In the first line there's a number of queries and both the scaling (<span class="math-tex">\(\geq 1.1\)</span>) and downscaling (<span class="math-tex">\(\geq 1.1\)</span>) factors. Following that are queries of these types:</p> 
+  <ul> 
+   <li>add count;</li> 
+   <li>remove count;</li> 
+   <li>count.</li> 
+  </ul> 
+  <p><strong>Output:</strong> For every 'count' query, write down the amount of allocated memory at the moment.</p>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">3 2.0 2.0<br>add 100<br>delete 50<br>count<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">64<br></code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">12 1.1 1.1<br>add 10000<br>delete 500<br>count<br>add 255342<br>delete 255<br>count<br>add 243<br>delete 2435<br>count<br>add 666554<br>delete 346<br>count<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">9660<br>271469<br>271469<br>937184<br></code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 8 seconds</font><br><br>
+<a href="https://hyperskill.org/learn/step/8096">Show topic summary</a>

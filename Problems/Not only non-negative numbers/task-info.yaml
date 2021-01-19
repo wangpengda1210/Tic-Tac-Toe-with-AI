@@ -1,0 +1,32 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    import java.util.Scanner;
+    import java.util.Arrays;
+
+    public class Main {
+
+        public static void countingSort(int[] numbers) {
+            // write your code here
+        }
+
+        /* Do not change code below */
+        public static void main(String[] args) {
+            Scanner scanner = new Scanner(System.in);
+            final String elements = scanner.nextLine();
+            final int[] array = Arrays.stream(elements.split("\\s+"))
+                    .mapToInt(Integer::parseInt)
+                    .toArray();
+            countingSort(array);
+            Arrays.stream(array).forEach(e -> System.out.print(e + " "));
+        }
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/3182#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Fri, 15 Jan 2021 07:24:50 UTC
+record: -1

@@ -1,0 +1,10 @@
+<h2>Partial sorting</h2>
+<html>
+ <head></head>
+ <body>
+  <p>At each step, Selection sort finds the smallest (largest) element in an unsorted part of an array and places the found element to the end of a sorted part. So, after $k$ iterations are completed, the first $k$ elements are the smallest (largest) elements of the array in ascending (descending) order. This property allows us to implement a partial sorting algorithm which runs in $O(k \cdot n)$ for an array of size $n$. Your task here is to implement such an algorithm by modifying Selection sort.</p> 
+  <p><strong>Input: </strong>the first line contains a number $n$ — the length of an input array. The next line contains $n$ numbers — the elements of the array. The 3rd line contains an integer $k$.</p> 
+  <p><strong>Output: </strong>$k$ largest elements of the input array in descending order.</p> 
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">6<br>3 4 2 1 0 7<br>3<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">7 4 3<br></code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">5<br>3 2 2 1 3<br>5</code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">3 3 2 2 1<br></code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 1 second</font><br><br>
+<a href="https://hyperskill.org/learn/step/3546">Show topic summary</a>

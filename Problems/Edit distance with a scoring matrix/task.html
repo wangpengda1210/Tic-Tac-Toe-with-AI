@@ -1,0 +1,23 @@
+<h2>Edit distance with a scoring matrix</h2>
+<html>
+ <head></head>
+ <body>
+  <p>Earlier, we defined edit distance as the minimal number of insertions, deletions and substitutions required to transform one string into another. But the metric can also be formulated in another way. We may assign some cost to each operation and say that edit distance is a sequence of transformations converting one string into the other having the minimal cost.</p> 
+  <p>For example, we may say that each of the described operations costs 1. In this case, there is no difference between the two formulations. But sometimes it is convenient to assign costs in another way.</p> 
+  <p>Assume we are working on a system for correction of spelling mistakes. Our algorithm is the following: we get a user's request, find the most similar word in a correct word database using edit distance metric, chose the most similar one and use it instead of the initial word.</p> 
+  <p>Suppose we get a request "flaq". In this case, we have at least two words having the edit distance equal to 1 with the initial string: "flaw" and "flat". So, which one should we use? On the one hand, there is no difference. But on the other hand, the word "flaw" is more similar to the word "flaq", because the letters "q" and "w" are closer on a keyboard than "w" and "t" and it's more likely that the user wanted to write "flaw" and not "flat".</p> 
+  <p>To process such cases correctly, one may use a so-called scoring matrix. A scoring matrix is a table <span class="math-tex">\( m \)</span> where <span class="math-tex">\( m[s_1][s_2] \)</span> is a cost of a substitution of a symbol <span class="math-tex">\( s_1 \)</span> by a symbol <span class="math-tex">\( s_2 \)</span>. For example, to solve the previous problem, we can use a matrix that assigns lower costs for symbols that are close on a keyboard and bigger costs for symbols that are far from each other.</p> 
+  <p>So, your task here is to implement a simple system for correction of spelling mistakes. For convenience, we will use a shortened version of the alphabet.</p> 
+  <p><strong>Input: </strong>The first line contains a string <span class="math-tex">\( s \)</span> <em>— </em>a user's request. The second line contains an integer <span class="math-tex">\( k \)</span> <em>—</em> the size of a database. Each of the next <span class="math-tex">\( k \)</span> lines contains a string <em>— </em>a correct word. Each string consists of only letters <span class="math-tex">\( \textrm{a, s, d, b, n, m} \)</span>. </p> 
+  <p><strong>Output: </strong>The first line should contain the edit distance <span class="math-tex">\( d_E(s, t) \)</span> where <span class="math-tex">\( t \)</span> is a word having the minimal edit distance with <span class="math-tex">\( s \)</span> among all other words from the database. The second line should contain a word <span class="math-tex">\( t \)</span> itself. If there are several words with the minimal edit distance, print the one that occurs first in the database.</p> 
+  <p>Consider the cost of an insertion and a deletion to be equal to <span class="math-tex">\( 1 \)</span>. To calculate the cost of a substitution, use the following scoring matrix:</p> 
+  <pre><code class="java">a s d b n m
+a 0 1 2 5 6 7
+s 1 0 1 5 6 7
+d 2 1 0 5 6 7
+b 5 6 7 0 1 2
+n 5 6 7 1 0 1
+m 5 6 7 2 1 0</code></pre>
+ </body>
+</html><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">aad<br>3<br>mad<br>sad<br>bad<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1<br>sad<br></code></pre><br><br><b>Sample Input:</b><br><pre><code class="language-no-highlight">asa<br>3<br>ama<br>aba<br>ada<br></code></pre><br><b>Sample Output:</b><br><pre><code class="language-no-highlight">1<br>ada<br></code></pre><br><br><br><font color="gray">Memory limit: 256 MB</font><br><font color="gray">Time limit: 3 seconds</font><br><br>
+<a href="https://hyperskill.org/learn/step/5691">Show topic summary</a>

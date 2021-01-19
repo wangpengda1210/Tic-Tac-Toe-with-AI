@@ -1,0 +1,15 @@
+type: code
+files:
+- name: src/Main.java
+  visible: true
+  text: |-
+    public long get(int x) {
+        // implement me
+    }
+  learner_created: false
+feedback_link: https://hyperskill.org/learn/step/7599#comment
+status: Solved
+feedback:
+  message: <html>Correct solution</html>
+  time: Tue, 19 Jan 2021 02:53:34 UTC
+record: -1
