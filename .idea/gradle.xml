@@ -11,12 +11,14 @@
         <option name="modules">
           <set>
             <option value="$PROJECT_DIR$" />
+            <option value="$PROJECT_DIR$/Problems/Add TableModelListener" />
             <option value="$PROJECT_DIR$/Problems/Advanced list" />
             <option value="$PROJECT_DIR$/Problems/Allocated memory" />
             <option value="$PROJECT_DIR$/Problems/An approximate matching" />
             <option value="$PROJECT_DIR$/Problems/Annotated fields" />
             <option value="$PROJECT_DIR$/Problems/Christmas tree" />
             <option value="$PROJECT_DIR$/Problems/Constructor Checker" />
+            <option value="$PROJECT_DIR$/Problems/Countries and capitals" />
             <option value="$PROJECT_DIR$/Problems/Create prototype" />
             <option value="$PROJECT_DIR$/Problems/Edit distance with a scoring matrix" />
             <option value="$PROJECT_DIR$/Problems/Edit distance with insertions and deletions" />
@@ -38,6 +40,8 @@
             <option value="$PROJECT_DIR$/Problems/Partial sorting" />
             <option value="$PROJECT_DIR$/Problems/Pumpkin and candle" />
             <option value="$PROJECT_DIR$/Problems/Raise to the power" />
+            <option value="$PROJECT_DIR$/Problems/Remove long names" />
+            <option value="$PROJECT_DIR$/Problems/Remove the same" />
             <option value="$PROJECT_DIR$/Problems/Simple heap" />
             <option value="$PROJECT_DIR$/Problems/Simple list" />
             <option value="$PROJECT_DIR$/Problems/Slightly mocking" />
@@ -46,7 +50,12 @@
             <option value="$PROJECT_DIR$/Problems/Sorting characters" />
             <option value="$PROJECT_DIR$/Problems/Swaps" />
             <option value="$PROJECT_DIR$/Problems/Testing the factorial" />
+            <option value="$PROJECT_DIR$/Problems/The big merge" />
+            <option value="$PROJECT_DIR$/Problems/The fair exchange" />
             <option value="$PROJECT_DIR$/Problems/The number of operations" />
+            <option value="$PROJECT_DIR$/Problems/The same letter" />
+            <option value="$PROJECT_DIR$/Problems/The same pairs" />
+            <option value="$PROJECT_DIR$/Problems/Transfer both lists" />
             <option value="$PROJECT_DIR$/Problems/User" />
             <option value="$PROJECT_DIR$/Problems/Vowel or not" />
             <option value="$PROJECT_DIR$/Problems/Your vehicle" />
